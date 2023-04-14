@@ -1,3 +1,12 @@
+$offWhite: hsl(36, 100%, 99%);
+$grayBlue: hsl(233, 8%, 79%);
+$drkgrayBlue: hsl(236, 13%, 42%);
+$drkBlue: hsl(240, 100%, 5%);
+$orange: hsl(35, 77%, 62%);
+$red: hsl(5, 85%, 63%);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +15,7 @@
 
 body {
     background-color: blue;
+    font-family: 'Inter', sans-serif;
 
     .grid-container  {
         max-width: 1400px;
