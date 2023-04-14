@@ -11,6 +11,7 @@ body {
         max-width: 1400px;
         display: grid;
         grid-template-areas: //must be a square or rectangle
+            'nav nav nav'
             'main main side'
             'main main side' 
             'btm1 btm2 btm3';
@@ -23,8 +24,12 @@ body {
     }
 
     // grid boxes
+
+    // main box
     .item1 {
         grid-area: main;
+        width: 90%;
+        overflow: hidden;
     }
 
     .item2 {
@@ -41,6 +46,17 @@ body {
 
     .item5 {
         grid-area: btm3;
+    }
+
+    .nav {
+        grid-area: nav;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: end;
+        }
     }
 
 }
