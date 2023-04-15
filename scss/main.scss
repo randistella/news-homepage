@@ -27,7 +27,7 @@ body {
             'btm1 btm2 btm3';
         gap: 20px;
         margin: 10vh 10vw;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         height:auto;
         background-color: #fff;
@@ -37,27 +37,84 @@ body {
 
     // main box
     .item1 {
-        grid-area: main;
-        width: 90%;
-        overflow: hidden;
+        grid-area: main;    
+
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .text-main {
+            display: flex;
+
+            h1 {
+                padding: 40px 40px 40px 0;
+                font-weight: 800;
+            }
+        }
+
+        .text-main-2 {
+
+            p {
+                padding:10px;
+            }
+        }
+
+        .btn {
+            background-color: $red;
+            color: #fff;
+            padding: 30px;
+            border: none;
+            align-self: flex-start;
+
+        }
     }
 
+    //side
     .item2 {
         grid-area: side;
+        padding: 30px;
+        background-color: $drkBlue;
+        color: #fff;
     }
 
+    //bottom 
     .item3 {
         grid-area: btm1;
+        display: flex;
+
+        img  {
+            object-fit: contain;
+            align-self: flex-start;
+        }
     }
 
     .item4 {
         grid-area: btm2;
+        display: flex;
+
+        img  {
+            object-fit: contain;
+            align-self: flex-start;
+        }
     }
 
     .item5 {
         grid-area: btm3;
+        display: flex;
+
+        img  {
+            object-fit: contain;
+            align-self: flex-start;
+        }
     }
 
+    // box text class
+    .text {
+        padding: 10px;
+    }
+
+    // nav
     .nav {
         grid-area: nav;
 
@@ -66,6 +123,13 @@ body {
             flex-direction: row;
             list-style-type: none;
             justify-content: end;
+
+            a {
+                text-decoration: none;
+                padding: 0 20px 0;
+                color:$drkgrayBlue;
+                cursor: pointer;
+            }
         }
     }
 
