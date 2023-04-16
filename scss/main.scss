@@ -25,7 +25,7 @@ body {
             'main main side'
             'main main side' 
             'btm1 btm2 btm3';
-        gap: 20px;
+        gap: 40px;
         margin: 10vh 10vw;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -50,11 +50,13 @@ body {
             h1 {
                 padding: 40px 40px 40px 0;
                 font-weight: 800;
+                font-size: 50px;
             }
         }
 
         .text-main-2 {
-
+            width: 80%;
+            line-height: 1.6;
             p {
                 padding:10px;
             }
@@ -63,7 +65,7 @@ body {
         .btn {
             background-color: $red;
             color: #fff;
-            padding: 30px;
+            padding: 15px 60px;
             border: none;
             align-self: flex-start;
 
@@ -76,12 +78,39 @@ body {
         padding: 30px;
         background-color: $drkBlue;
         color: #fff;
+        line-height: 1.6;
+
+        h2 {
+            color:$orange;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        a:hover {
+            color:$orange;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background: $drkgrayBlue;
+        }
     }
 
     //bottom 
     .item3 {
         grid-area: btm1;
         display: flex;
+        line-height: 1.6;
 
         img  {
             object-fit: contain;
@@ -92,6 +121,7 @@ body {
     .item4 {
         grid-area: btm2;
         display: flex;
+        line-height: 1.6;
 
         img  {
             object-fit: contain;
@@ -102,6 +132,7 @@ body {
     .item5 {
         grid-area: btm3;
         display: flex;
+        line-height: 1.6;
 
         img  {
             object-fit: contain;
