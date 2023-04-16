@@ -14,18 +14,18 @@ $red: hsl(5, 85%, 63%);
 }
 
 body {
-    background-color: blue;
+    // background-color: blue;
     font-family: 'Inter', sans-serif;
 
     .grid-container  {
-        max-width: 1400px;
+        max-width: 1200px;
         display: grid;
         grid-template-areas: //must be a square or rectangle
             'nav nav nav'
             'main main side'
             'main main side' 
             'btm1 btm2 btm3';
-        gap: 40px;
+        gap: 30px;
         margin: 10vh 10vw;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -37,7 +37,7 @@ body {
 
     // main box
     .item1 {
-        grid-area: main;    
+        grid-area: main;
 
         img {
             object-fit: contain;
@@ -48,9 +48,15 @@ body {
             display: flex;
 
             h1 {
-                padding: 40px 40px 40px 0;
+                padding: 20px 20px 20px 10px;
                 font-weight: 800;
-                font-size: 50px;
+                font-size: 40px;
+                width: 60%;
+                margin-right: 30px;
+            }
+
+            p {
+                font-size: 15px;
             }
         }
 
@@ -65,13 +71,14 @@ body {
         .btn {
             background-color: $red;
             color: #fff;
-            padding: 15px 40px;
+            padding: 12px 30px;
             border: none;
             align-self: flex-start;
             cursor: pointer;
             font-family: inherit;
             letter-spacing: 5px;
-            margin: 30px 0 0 0;
+            margin: 20px 15px 0 0;
+            font-size: 15px;
         }
 
         .btn:hover {
@@ -83,16 +90,16 @@ body {
     //side
     .item2 {
         grid-area: side;
-        padding: 30px;
+        padding: 20px;
         background-color: $drkBlue;
         color: #fff;
         line-height: 1.6;
 
         h2 {
             color:$orange;
-            font-size: 40px;
-            font-weight: 700;
-            margin-bottom: 20px;
+            font-size: 30px;
+            // font-weight: 700;
+            margin-bottom: 10px;
         }
 
         a {
@@ -100,7 +107,7 @@ body {
             text-decoration: none;
             font-weight: 700;
             cursor: pointer;
-            font-size: 25px;
+            font-size: 15px;
         }
 
         a:hover {
@@ -108,13 +115,15 @@ body {
         }
 
         hr {
-            margin-top: 30px;
+            margin-top: 20px;
             margin-bottom: 30px;
-            background: $drkgrayBlue;
+            background-color: $drkgrayBlue;
+            height: 1px;
+            border:none;
         }
 
         p {
-            font-size: 19px;
+            font-size: 15px;
             color: #888;
         }
     }
@@ -123,11 +132,28 @@ body {
     .item3 {
         grid-area: btm1;
         display: flex;
-        line-height: 1.6;
 
         img  {
             object-fit: contain;
             align-self: flex-start;
+            width: 30%;
+            margin-right: 10px;
+        }
+
+        h3 {
+            font-size: 30px;
+            color:$grayBlue;
+        }
+
+        p {
+            color:$drkgrayBlue;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        strong {
+            font-size: 15px;
         }
     }
 
@@ -139,6 +165,22 @@ body {
         img  {
             object-fit: contain;
             align-self: flex-start;
+            width: 40%;
+        }
+
+        h3 {
+            font-size: 20px;
+            color:$grayBlue;
+        }
+
+        p {
+            color:$drkgrayBlue;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        strong {
+            font-size: 15px;
         }
     }
 
@@ -150,6 +192,22 @@ body {
         img  {
             object-fit: contain;
             align-self: flex-start;
+            width: 40%;
+        }
+
+        h3 {
+            font-size: 20px;
+            color:$grayBlue;
+        }
+
+        p {
+            color:$drkgrayBlue;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        strong {
+            font-size: 15px;
         }
     }
 
@@ -169,6 +227,7 @@ body {
             list-style-type: none;
             align-items: center;
             margin-left: auto;
+            font-size: 15px;
 
 
             a {
